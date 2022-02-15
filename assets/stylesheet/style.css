@@ -1,0 +1,408 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Custom Styles Only */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    position: relative;
+}
+
+/* General */
+
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text{
+    margin-bottom: 20px;
+    font-family: 'Gideon Roman', cursive;
+}
+h4{
+    font-family: 'Gideon Roman', cursive;
+}
+small{
+    font-family: 'Gideon Roman', cursive;
+}
+
+/* Section-one */
+
+.bg-img{
+    background-image: url("../media/banner.jpg");
+    height: 100vh;
+}
+.social{
+    width: 32px;
+    height:32px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px ;
+    color: #000;
+}
+.icon{
+    width: 100%;
+    justify-content: center; 
+    position: absolute;
+    top: 10px;
+}
+.navbar{
+    padding: 16px 0;
+    color: #fff;
+}
+.heading{
+    color: red;
+    font-size: 24px;
+    margin-left: 20px;
+}
+.header{
+    position: fixed;
+    top: 60px;
+    text-align: center;
+    background-color: #fff;
+    left: 10%;
+    width: 85%;
+    padding: 0 32px 0 0;
+    height: auto;
+}
+.logo{
+    width: 50px;
+}
+.nav a{
+    margin-left: 20px;
+    color: rgb(173, 170, 170);
+}
+.nav .active{
+    border-top: 2px solid red;
+    padding: 12px 0;
+}
+hr{
+    width: 250px;
+}
+.main-header{
+    position: relative;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+}
+h1{
+    font-size: 24px;
+    color: #fff;
+}
+.hero-text{
+    color: #fff;
+}
+.btn{
+    padding: 6px 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 24px;
+}
+.btn-primary{
+    background-color: red;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Section-two */
+
+.dot-contain{
+    text-align: center;
+    height: 10vh;
+    margin-top: 10px;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    background-color: #777;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+.active-circle{
+    background-color: #000;
+}
+h3{
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+}
+.about{
+    text-align: center;
+    padding: 40px 0;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin:  20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-two{
+    background-color: green;
+}
+.box-three{
+    background-color: aqua;
+}
+.box-four{
+    background-color: black;
+}
+.box i{
+    color:#fff ;
+}
+
+/* Section-three */
+
+.portfolio-img{
+    width: 100%;
+}
+.portfolio{
+     margin: 16px 0;
+} 
+.wrap{
+    flex-wrap: wrap;
+}
+.portfolio div{
+    flex: 0 1 21%;
+    margin-bottom: 3.2%;
+}
+
+/* Section-four */
+
+.team div{
+    flex: 0 1 21%;
+    margin: 1rem auto;
+    
+}
+.team-img{
+   width: 100%;
+   border-radius: 50%;
+}
+
+/* Section-five */
+
+h4{
+    text-align: center;
+}
+.range{
+    background-color: gray;
+    margin-bottom: 10px;
+   
+}
+.value{
+    background-color: rgb(209, 28, 28);
+    width: 80%;
+    color: #fff;
+   
+}
+.value-two{
+    background-color: rgb(209, 28, 28);
+    width: 76%;
+    color: #fff;
+    
+}
+.value-three{
+    background-color: rgb(209, 28, 28);
+    width: 65%;
+    color: #fff;
+}
+.value-four{
+    background-color: rgb(209, 28, 28);
+    width: 70%;
+    color: #fff;
+}
+.flex-width{
+    flex: 0 1 68%;
+}
+.flex-width-two{
+    flex: 0 1 30%;
+    margin-bottom: 50px;
+}
+
+/*  section-six */
+
+.map{
+    width: 100%;
+    height: 400px;
+}
+
+/* Section-seven */
+
+.col{
+    width: 65%;
+}
+.col-two{
+    width: 30%;
+}
+form{
+    margin-bottom: 20px;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid gray;
+    margin-bottom: 16px;
+}
+input .form-control{
+    width: 100%;
+}
+.col-value{
+        background-color: rgb(209, 28, 28);
+        border: 1px solid black;
+        text-align: center;
+        color: #fff;
+}
+
+
+/* Footer */
+
+.footer-item{
+    padding-top: 60px;
+}
+.top-btn{
+    padding: 6px 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 24px;
+}
+
+/* Gallery page */
+
+.gallery-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  20px 10px;
+}
+.gallery-header .logo{
+    display: flex;
+     align-items: center;
+}
+.gallery-header .logo img{
+    width: 50px;
+} 
+.gallery-header  button{
+    margin: 0;
+    padding: 6px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 15px;
+}
+.logo-header{
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+    font-weight: 800;
+}
+.padding{
+    padding-top: 350px;
+}
+.blog-img{
+    width: 100%;
+    border: 1px solid black;
+}
+.section-one{
+    width:300px;
+    background-color: red;
+    height: 100vh;
+    position: fixed;
+}
+.section-two{
+    margin-left: 350px;
+    flex: 0 1 60%;
+}
+.gallery{
+    align-items: flex-start;
+}
+.gallery div{
+    margin: 2% 1%;
+
+}
+.aside-head{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 200px;
+    color: #fff
+}
+.gallery-text{
+    text-align: center;
+}
+.hero-head{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 200px;
+    color: rgb(25, 25, 34);
+    padding-top: 20px; 
+    
+}
+
